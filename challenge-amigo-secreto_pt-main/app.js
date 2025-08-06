@@ -51,7 +51,7 @@ function sortearAmigo(){
     let amigoSecreto = listaDeAmigos[sorteiaAmigoSecreto];
 
     //NÃO SE TIRAR
-    if (amigoSecreto === nomeInserido) {
+    if (amigoSecreto == nomeInserido) {
         return sortearAmigo();
     } else {
         exibirTextoNaTela('h1', `Seu amigo secreto é ${amigoSecreto}`)
