@@ -41,7 +41,7 @@ function adicionarAmigo(){
 }
 
 function sortearAmigo(){
-    // VERIFICAR SE TEM PELO MENOS 2 NOMES
+    
     if (listaDeAmigos.length < 2) {
         alert('É necessário ter pelo menos dois amigos para o sorteio');
         return;
@@ -52,7 +52,7 @@ function sortearAmigo(){
 
     //NÃO SE TIRAR
     if (amigoSecreto === nomeInserido) {
-        return sortearAmigo(); // Sorteia novamente
+        return sortearAmigo();
     } else {
         exibirTextoNaTela('h1', `Seu amigo secreto é ${amigoSecreto}`)
         return;
@@ -60,12 +60,12 @@ function sortearAmigo(){
 }
 
 function limparCampo() {
-    let listaTotal = document.getElementById('listaAmigos');
-    //document.querySelector('input').value = '';
-    listaTotal.innerHTML = '';
+    //let listaTotal = document.getElementById('listaAmigos');
+    document.querySelector('input').value = '';
+    //listaTotal.innerHTML = '';
 
 
 
-        totalDeAmigos++;
+        //totalDeAmigos++;
     }
 
